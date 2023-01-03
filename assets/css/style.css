@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 0 12px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#header .header-center {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#logo .logo-img{
+    height: 60px;
+    margin-right: 64px;
+}
+
+#nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nav li {
+    display: block;
+    float: left;
+}
+
+#nav a:hover {
+    background-color: #cc0404;
+}
+
+#nav a {
+    padding: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 60px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#header .search-btn {
+    position:absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+    padding: 0 24px;
+    transition: .2s;
+}
+
+#header .search {
+    color: #fff;
+    font-size: 18px;
+}
+
+#header .search-btn:hover {
+    background-color: #cc0404;
+}
+
+/* CONTENT  */
+#content {
+    margin-top: 60px;
+}
+
+#content .content-section {
+    width: 1170px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 32px;
+    font-weight:lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 64px 0 32px;
+    cursor: default;
+}
+
+#content .section-sub-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 32px;
+    color: #e21428;
+}
+
+/* PRODUCT SECTION  */
+#product .list-row {
+    overflow: hidden;
+    margin: 0 -16px;
+}
+
+#product .car-list {
+    padding-bottom: 48px;
+}
+
+#product .car-item {
+    width: 33.33333%;
+    float: left;
+    padding: 0 16px 32px;
+}
+
+#product .car-box {
+    transition: .5s;
+    border-bottom: #e21428 solid 2px;
+    cursor: pointer;
+}
+
+#product .car-img-frame {
+    overflow: hidden;
+}
+
+#product .car-img {
+    width: 100%;
+    display: block;
+    transition: .5s;
+}
+
+#product .car-body {
+    padding: 8px 16px 18px;
+}
+
+#product .car-name {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    transition: .2s;
+}
+
+#product .car-consume {
+    padding-top: 5px;
+}
+
+#product .car-price {
+    display: inline-block;
+    padding-top: 5px;
+    color: #e21428;
+}
+
+#product .car-price span::after {
+    content: 'đ';
+    text-decoration: underline;
+}
+
+#product .car-box:hover .car-img{
+    transform: scale(1.1);
+}
+
+#product .car-box:hover {
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+#product .car-name:hover {
+    color: #cc0404;
+}
+
+/* Price Table Section  */
+#price-table .section-heading {
+    color: #fff;
+}
+
+#price-table .section-sub-heading {
+    font-style:italic ;
+}
+
+#price-table {
+    background-color: #000;
+    width: 100%;
+}
+
+#price-table .price-table {
+    width: 1170px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 32px 20px 64px;
+}
+
+#price-table table {
+    width: 100%;
+}
+
+#price-table th, 
+#price-table tr:nth-child(even){
+    background-color: #eee;
+}
+
+#price-table tr:nth-child(odd){
+    background-color: #fff;
+}
+
+#price-table table,
+#price-table table td,
+#price-table table th {
+    border-collapse: collapse;
+    border: #bbb 1px solid;
+    text-align: center;
+    padding: 12px;
+}
+
+#price-table table th {
+    font-size: 18px;
+}
+
+#price-table table .car-title {
+    color: #e21428;
+    font-size: 18px;
+    background-color: white;
+}
+
+/* Register section  */
+#register-section {
+    margin: 64px 0;
+    
+}
+
+#register-section .register-content {
+    padding-right: 32px;
+    border: 2px solid #bbb;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+#register-section .section-heading {
+    padding: 32px 0;
+}
+
+#register-section.content-section {
+    width: 1000px;
+
+}
+
+#register-section .register-label {
+    display: inline-block;
+    width: 25%;
+    line-height: 36px;
+    padding-left: 32px;
+    padding-bottom: 18px;
+}
+
+#register-section .register-label i {
+    padding-right: 4px;
+}
+
+#register-section .register-input {
+    display: inline-block;
+    width: 74.5%;
+    height: 36px;
+    margin-bottom: 18px;
+    padding-left: 12px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    transition: .1s;
+}
+
+#register-section .register-input:hover {
+    background-color: #eee;
+}
+
+#register-section .register-input:focus {
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    outline: 0;
+}
+
+#register-section select {
+    color: rgba(0,0,0,0.7);
+}
+
+#register-section .submit-btn {
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+#register-section .register-submit {
+    padding: 0 18px;
+    border: none;
+    background-color: #111;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 38px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#register-section .register-submit:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* CONTACT SECTION  */
+
+#contact-section {
+    background-color: #ddd;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+#contact-section .contact-content {
+    display: flex;
+    padding: 20px 0;
+}
+
+#contact-section .contact-left {
+    width: 50%;
+    padding: 32px 16px;
+}
+
+#contact-section .hotline-heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+#contact-section .hotline-infor {
+    color: #333;
+    line-height: 24px;
+}
+
+#contact-section .contact-right {
+    width: 50%;
+}
+
+#contact-section .contact-right-content {
+    border-left: 2px solid #fff;
+    color: #333;
+    padding: 16px 32px;
+    margin: 16px 0;
+}
+
+#contact-section .contact-social {
+    display: flex;
+}
+
+#contact-section .contact-social p {
+    padding-right: 16px;
+    line-height: 24px;
+}
+
+#contact-section .contact-social a {
+    font-size: 24px;
+    color: #333;
+    padding-right: 8px;
+    transition: .1s;
+}
+
+#contact-section .contact-social a:hover {
+    opacity: 0.7;;
+}
+
+#contact-section .contact-address {
+    padding-top: 12px;
+    line-height: 24px;
+}
+/* CONTACT END  */
+
+/* FOOTER  */
+#footer {
+    width: 100%;
+    height: 48px;
+    background-color: #000;
+}
+
+#footer p {
+    text-align: center;
+    color: #aaa;
+    padding: 15px 0;
+}
